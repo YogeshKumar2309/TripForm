@@ -50,3 +50,68 @@ $con->close();
 
 ?> 
 
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Welcome To Travel Form</title>
+   <link rel="stylesheet" href="style.css" />
+ </head>
+ <body>
+   <div class="container">
+     <h1>Welcome to GP Lohaghat Mumbai Trip form</h1>
+     <p>
+       Enter your details and submit this form to confirm your participation in
+       the trip
+     </p>
+     <?php
+     if($insert == true){
+      echo "<p class='tqSubmitForm'>
+       Thank you for filling the form. We are happy to see you joining us for
+       the Mumbai trip
+     </p>";
+     }
+   
+     ?>
+
+     <form action="index.php" method="post">
+      <!-- <form action="process.php" method="POST"> -->
+     
+     <input type="text" name="name" id="name" placeholder="Enter your name" />
+       <input type="number" name="age" id="age" placeholder="Enter your age" />
+
+       <input
+         type="text"
+         name="gender"
+         id="gender"
+         placeholder="Enter yout gender"
+       />
+
+       <input
+         type="email"
+         name="email"
+         id="email"
+         placeholder="Enter your email"
+       />
+       <input
+         type="number"
+         name="phone"
+         id="phone"
+         placeholder="Enter your phone"
+       /> 
+     
+
+       <textarea
+         name="desc"
+         id="desc"
+         cols="30"
+         rows="10"
+         placeholder="Enter any other information here"
+       ></textarea>
+       <button name="submit" type="submit" class="btn">Submit</button>
+       <!-- <button class="btn">Reset</button> -->
+     </form>
+   </div>
+ </body>
+</html>
