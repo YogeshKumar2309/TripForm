@@ -1,0 +1,87 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+body{
+background-image: url(image.png);
+background-size: cover;
+width: 100vw;
+min-height: 100vh;
+}
+.container{
+  
+  max-width: 70%;
+  background-color: rgba(213, 176, 248, 0.351);
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.container > h1{
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+ 
+p{
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.tqSubmitForm{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  font-size: 22px;
+  color: green;
+ font-family: 'Times New Roman', Times, serif;
+  font-weight: 600;
+}
+
+/* input[type="text"],input[type="email"],input[type="password"]{
+  color:black;
+} */
+
+input::placeholder{
+  color: black;
+}
+textarea::placeholder{
+  color: black;
+}
+  
+input,textarea{
+  color: rgb(0, 0, 0);
+  border: 2px solid black;
+  border-radius: 6px;
+  outline: none;
+  font-size: 16px;
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: rgba(255, 192, 203, 0.43);
+}
+
+.container > form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn{
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(198,152,241,1);
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 18px;
+  color: rgb(2, 0, 0);
+  margin: 10px;
+}
